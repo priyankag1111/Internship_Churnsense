@@ -1,5 +1,12 @@
 """Batch scoring page for customer CSV files."""
 
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = str(Path(__file__).resolve().parents[2])
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 import streamlit as st
 
 from app.shared import SAMPLE_CSV_PATH, get_model, page_header
