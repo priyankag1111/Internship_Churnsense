@@ -14,37 +14,52 @@ st.markdown(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
     :root {
-        --ink: #172b2a;
-        --muted: #607472;
-        --paper: #f3f6f3;
-        --teal: #087e73;
-        --mint: #d8eee6;
-        --amber: #e9a23b;
+        --ink: #eff7f3;
+        --muted: #b3c5bf;
+        --paper: #101918;
+        --surface: #1c2927;
+        --raised: #253633;
+        --border: #3b504b;
+        --teal: #42d6b5;
+        --amber: #f2b15b;
     }
     html, body, [class*="st-"], [data-testid="stMarkdownContainer"] {
         font-family: 'DM Sans', sans-serif;
         letter-spacing: 0;
+        color: var(--ink);
     }
-    [data-testid="stAppViewContainer"] { background: var(--paper); }
-    [data-testid="stSidebar"] { background: #172b2a; }
-    [data-testid="stSidebar"] * { color: #eef6f1; }
+    [data-testid="stAppViewContainer"], [data-testid="stMain"], .stApp { background: var(--paper); color: var(--ink); }
+    [data-testid="stAppViewContainer"] p,
+    [data-testid="stAppViewContainer"] label,
+    [data-testid="stAppViewContainer"] small,
+    [data-testid="stAppViewContainer"] [data-testid="stMarkdownContainer"] { color: var(--ink); }
+    [data-testid="stSidebar"] { background: #172421; }
+    [data-testid="stSidebar"] * { color: #eff7f3; }
     [data-testid="stSidebarNav"] { padding-top: 1rem; }
-    h1, h2, h3 { color: var(--ink); font-family: 'Manrope', sans-serif; letter-spacing: 0; }
+    h1, h2, h3, h4 { color: var(--ink); font-family: 'Manrope', sans-serif; letter-spacing: 0; }
     [data-testid="stMetric"] {
-        background: #ffffff;
-        border: 1px solid #dce6df;
+        background: var(--surface);
+        border: 1px solid var(--border);
         border-left: 4px solid var(--teal);
         border-radius: 4px;
         padding: 1rem 1.1rem;
     }
-    [data-testid="stMetricLabel"] { color: var(--muted); }
-    .page-subtitle { color: var(--muted); margin-top: -0.65rem; margin-bottom: 1.5rem; }
-    div[data-testid="stForm"] { background: #ffffff; border: 1px solid #dce6df; border-radius: 4px; padding: 1.2rem; }
+    [data-testid="stMetricLabel"], [data-testid="stMetricValue"], [data-testid="stMetricDelta"] { color: var(--ink); }
+    .page-subtitle { color: var(--muted) !important; margin-top: -0.65rem; margin-bottom: 1.5rem; }
+    div[data-testid="stForm"] { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem; }
+    input, textarea, [data-baseweb="select"] > div, [data-baseweb="input"] > div,
+    [data-baseweb="textarea"] > div {
+        background-color: var(--raised) !important;
+        color: var(--ink) !important;
+        border-color: var(--border) !important;
+    }
+    [data-testid="stDataFrame"], [data-testid="stTable"] { background: var(--surface); }
+    [data-testid="stAlert"] p { color: var(--ink); }
     div[data-testid="stButton"] button, div[data-testid="stFormSubmitButton"] button {
-        background: var(--teal); color: white; border: 0; border-radius: 4px; font-weight: 700;
+        background: #087e73; color: #ffffff; border: 1px solid #42d6b5; border-radius: 4px; font-weight: 700;
     }
     div[data-testid="stButton"] button:hover, div[data-testid="stFormSubmitButton"] button:hover {
-        background: #06675f; color: white; border: 0;
+        background: #06675f; color: #ffffff; border-color: #72e5ca;
     }
     </style>
     """,

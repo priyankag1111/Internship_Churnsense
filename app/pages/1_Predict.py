@@ -59,7 +59,7 @@ with st.form('customer_prediction'):
         streaming_tv = st.selectbox('Streaming TV', service_values)
         streaming_movies = st.selectbox('Streaming movies', service_values)
 
-    submitted = st.form_submit_button('Assess churn risk', use_container_width=True)
+    submitted = st.form_submit_button('Assess churn risk', width='stretch')
 
 if submitted:
     customer = pd.DataFrame([{

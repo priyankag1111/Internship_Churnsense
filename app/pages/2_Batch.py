@@ -35,7 +35,7 @@ if uploaded_file is not None:
         metric_cols[0].metric('Records scored', f'{len(scored):,}')
         metric_cols[1].metric('Flagged at 50%', f'{churn_count:,}')
         metric_cols[2].metric('Average churn likelihood', f"{scored['churn_probability'].mean():.1%}")
-        st.dataframe(scored, use_container_width=True, hide_index=True)
+        st.dataframe(scored, width='stretch', hide_index=True)
         st.download_button(
             'Download scored CSV',
             data=scored.to_csv(index=False).encode('utf-8'),
