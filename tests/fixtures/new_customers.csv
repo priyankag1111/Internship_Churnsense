@@ -1,0 +1,5 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,source_note
+NEW-0001,Nonbinary,0,No,Yes,0,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,25.10,,synthetic prospect
+NEW-0002,Female,1,Yes,No,58,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic),112.40,6470.30,synthetic prospect
+NEW-0003,Male,0,No,No,14,Yes,No,DSL,No,Yes,No,Yes,No,Yes,One year,Yes,Credit card (automatic),68.75,962.50,synthetic prospect
+NEW-0004,Female,0,Yes,Yes,36,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check,20.15,725.40,synthetic prospect

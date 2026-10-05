@@ -1,6 +1,11 @@
-ipykernel
-numpy
-pandas
-scikit-learn
-seaborn
-matplotlib
+ipykernel==7.3.0
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+seaborn==0.13.2
+matplotlib==3.11.1
+shap==0.52.0
+catboost==1.2.10
+streamlit==1.65.0
+pytest==9.1.1
+joblib==1.6.0
