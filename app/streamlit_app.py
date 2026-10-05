@@ -23,7 +23,7 @@ st.markdown(
         --teal: #42d6b5;
         --amber: #f2b15b;
     }
-    html, body, [class*="st-"], [data-testid="stMarkdownContainer"] {
+    html, body, .stApp, [data-testid="stMarkdownContainer"] {
         font-family: 'DM Sans', sans-serif;
         letter-spacing: 0;
         color: var(--ink);
@@ -46,6 +46,15 @@ st.markdown(
     }
     [data-testid="stMetricLabel"], [data-testid="stMetricValue"], [data-testid="stMetricDelta"] { color: var(--ink); }
     .page-subtitle { color: var(--muted) !important; margin-top: -0.65rem; margin-bottom: 1.5rem; }
+    .app-title {
+        color: var(--ink);
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.55rem;
+        font-weight: 800;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border);
+    }
     div[data-testid="stForm"] { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1.2rem; }
     input, textarea, [data-baseweb="select"] > div, [data-baseweb="input"] > div,
     [data-baseweb="textarea"] > div {
@@ -63,6 +72,11 @@ st.markdown(
     }
     </style>
     """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    '<div class="app-title">Churnsense - Customer Retention Intelligence</div>',
     unsafe_allow_html=True,
 )
 
