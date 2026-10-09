@@ -80,9 +80,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.markdown('## CHURNSENSE')
-st.sidebar.caption('CUSTOMER RETENTION INTELLIGENCE')
-
 dashboard = st.Page('pages/4_Dashboard.py', title='Dashboard', default=True)
 predict = st.Page('pages/1_Predict.py', title='Predict')
 batch = st.Page('pages/2_Batch.py', title='Batch')
